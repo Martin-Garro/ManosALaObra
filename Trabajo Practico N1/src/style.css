@@ -1,0 +1,49 @@
+.body{
+    text-align: center;
+}
+
+.addTaskInput{
+    width: 230px;
+    text-align: left;
+    border-radius:0cm;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.addTaskButton{
+    width: 75px;
+    text-align: center;
+    border-radius:0cm;
+    padding: 15px;
+    background-color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+.task-list{
+    width: 350px; /* Ancho fijo deseado */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.task-list button{
+    background:transparent;
+    border-color: transparent;
+}
+
+ul{
+    display:flex;
+    align-items: center;
+    border: 2px solid #101010;
+    border-radius: 0px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: 10;
+    text-align: center;
+    justify-content: space-between;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+}
