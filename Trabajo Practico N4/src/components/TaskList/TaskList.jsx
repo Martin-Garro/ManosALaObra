@@ -1,6 +1,6 @@
 // src/components/TaskList/TaskList.js
 import React from "react";
-//import './TaskList.css'; // Opcional si tienes estilos específicos
+import "./Style.scss"; // Opcional si tienes estilos específicos
 import { FaTrash } from "react-icons/fa";
 import {IoShareSocial} from "react-icons/io5";
 import {BsFillClipboardFill} from "react-icons/bs";
@@ -11,7 +11,7 @@ function TaskList({ tasks, deleteTask }) {
     return (
       <div className="task-list">
         <ul>
-          <div>
+          <div className="noTask">
             <label>No hay tareas</label>
           </div>
         </ul>
@@ -23,19 +23,29 @@ function TaskList({ tasks, deleteTask }) {
     <div className="task-list">
       {tasks.map((task) => (
         <ul key={task.id}>
-          <div>
-            <input type="checkbox" name="packersOff" value="1" />
+          
+          
+            <input type="checkbox" name="packersOff" value="1" id={`task-${task.id}`}/>
+          
+
+          <div className="name">
             <label className="strikethrough">{task.tarea}</label>
           </div>
-          <button onClick={()=> copyTask(task.id)}>
-            <i className="copy"><BsFillClipboardFill/></i>
-          </button>
-          <button onClick={()=> shareTask(task.id)}>
-            <i className="share"><IoShareSocial/></i>
-          </button>
-          <button onClick={() => deleteTask(task.id)}>
-            <i className="trash"><FaTrash /></i>
-          </button>
+          
+          <div className="buttons">
+            <button onClick={()=> copyTask(task.id)}> 
+              <i className="copy"><BsFillClipboardFill/></i> 
+            </button>
+            
+            <button onClick={()=> shareTask(task.id)}>
+              <i className="share"><IoShareSocial/></i> 
+            </button>
+
+            <button onClick={() => deleteTask(task.id)}>
+              <i className="trash"><FaTrash /></i>
+            </button>
+          </div>
+          
         </ul>
       ))}
     </div>

@@ -1,0 +1,46 @@
+.addTask{
+    background-color: rgb(73, 73, 73, 0.9); /*Establece el color de fondo del elemento */
+    width: 335px; /* Fija el ancho del elemento */
+    margin: 0 auto; /* Centra horizontalmente el elemento dentro de su contenedor padre. */
+    max-height: 40px; /* Establece la altura máxima del elemento */
+    display:flex; /* Aplica un modelo de caja flexible al elemento, lo que permite un mejor control sobre la alineación y distribución de los elementos secundarios*/
+    align-items: center; /* Centra verticalmente los elementos secundarios dentro del elemento principal.*/
+    border: 2px solid #101010; /* Establece un borde sólido de 2 píxeles de ancho con un color de línea*/
+    padding: 8px; /* Agrega un relleno de 8 píxeles alrededor del contenido del elemento */
+    padding-right: 3px; /* Agrega un relleno específicamente de 3 píxeles en el lado derecho del contenido. */
+    border-color: transparent; /* Hace que el color del borde sea transparente */
+    border-radius: 4px; /* Establece un radio de borde de 4 píxeles, lo que redondea las esquinas del elemento. */
+    position:fixed; /* Fija la posición del elemento en relación con la ventana del navegador, lo que hace que el elemento se mantenga en su lugar incluso cuando se desplaza la página*/
+    z-index: 1; /* determina la posición del elemento en el eje z (la profundidad) en relación con otros elementos. Un valor más alto se superpondrá a elementos con un valor z-index más bajo. */
+    transition: background-color 0.3s;/* Aplica una transición suave de 0.3 segundos al cambio del color de fondo, lo que crea un efecto de transición suave al modificar ese estilo.*/
+    left: 50.5%; /* Establece la posición horizontal izquierda del elemento en el 51% del ancho del contenedor padre.*/
+    transform: translate(-50%); /*  mover el elemento hacia la izquierda un 50% de su propio ancho, lo que lo centra horizontalmente en el contenedor padre.*/
+
+}
+
+.addTaskInput{
+    padding: 4px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-right: 10px ;
+    border-color: transparent;
+}
+
+.addTaskButton{
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 2px;
+    position:static;
+    padding-top: 3px;
+    margin-right: 10px;
+    border: 1.5px solid white;
+    color: white;
+    font-size: 24px;
+    border-radius: 4px;
+    
+}
+

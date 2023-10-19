@@ -1,0 +1,32 @@
+body{
+    color: white;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    top: 5%; /* Distancia del 5% desde la parte superior de la ventana */
+    left: 5%; /* Distancia del 5% desde el borde izquierdo de la ventana */
+    width: 90%; /* Ancho del 90% de la ventana */
+    //background-color: black;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+.divider {
+    height: 2px; /* Grosor de la línea horizontal */
+    background-color: rgb(139, 139, 139); /* Color de la línea horizontal (reemplaza 'your-color' con tu elección de color) */
+    margin: 16px 0; /* Espaciado en la parte superior e inferior del Divider */
+    max-width: 380px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+.ButtonTheme{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 24px;
+}
